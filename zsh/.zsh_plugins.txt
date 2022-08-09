@@ -13,3 +13,4 @@ zsh-users/zsh-syntax-highlighting
 #lukechilds/zsh-nvm
 
 rupa/z
+jeffreytse/zsh-vi-mode
