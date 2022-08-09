@@ -18,6 +18,7 @@ source ~/.zsh_plugins.sh
 
 # Update zsh plugins with antibody
 alias antibody-update="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
+alias vim="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
