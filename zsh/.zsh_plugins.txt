@@ -1,0 +1,15 @@
+romkatv/powerlevel10k
+
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+robbyrussell/oh-my-zsh path:plugins/command-not-found
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/git-extras
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
+
+# Plugins for Node.js
+#robbyrussell/oh-my-zsh path:plugins/node
+#lukechilds/zsh-nvm
+
+rupa/z
