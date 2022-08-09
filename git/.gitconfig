@@ -1,0 +1,6 @@
+[user]
+	email = tarabrind@gmail.com
+	name = TDen
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nvim
