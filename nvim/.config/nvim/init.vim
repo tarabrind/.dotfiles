@@ -5,7 +5,7 @@ set termguicolors
 set spelllang=en,ru
 
 set number
-"set relativenumber
+set relativenumber
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -32,6 +32,13 @@ set scrolloff=7
 "set updatetime=1000
 set encoding=UTF-8
 set fileformat=unix
+set clipboard=unnamedplus 
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 3
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
 
 " --- Plugins
 call plug#begin('~/.config/nvim/plugged')
@@ -50,7 +57,7 @@ Plug 'nvim-lualine/lualine.nvim' " Statusline
 "Plug 'tpope/vim-haml', { 'for': 'haml'}
 
 " CSS/SCSS
-"Plug 'norcalli/nvim-colorizer.lua'
+Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'cakebaker/scss-syntax.vim', { 'for': ['scss', 'sass'] }
 "Plug 'hail2u/vim-css3-syntax', { 'for': ['css', 'scss'] }
 
@@ -77,14 +84,22 @@ Plug 'morhetz/gruvbox'  " colorscheme gruvbox
 call plug#end()
 
 lua require('plugins.lualine')
+lua require'colorizer'.setup()
 
 " --- Colors
-colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_transparent_bg = 1
 set background=dark
+colorscheme gruvbox
 
 " --- Remaps
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
+
+nnoremap <C-k> <C-w><Up>
+nnoremap <C-j> <C-w><Down>
+nnoremap <C-l> <C-w><Right>
+nnoremap <C-h> <C-w><Left>
 
 " --- Autocommands
 autocmd FileType python set colorcolumn=7
