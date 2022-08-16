@@ -17,9 +17,13 @@ compinit
 # Enable plugins
 source ~/.zsh_plugins.sh
 
-# Update zsh plugins with antibody
+# Aliases
 alias antibody-update="antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
 alias vim="nvim"
+alias ls="ls --color -h"
+alias ll="ls -l"
+alias la="ls -la"
+alias ip="ip -c"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
