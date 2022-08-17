@@ -96,6 +96,8 @@ colorscheme gruvbox
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
 
+nmap <silent> // :nohlsearch<CR>CR
+
 nnoremap <C-k> <C-w><Up>
 nnoremap <C-j> <C-w><Down>
 nnoremap <C-l> <C-w><Right>
