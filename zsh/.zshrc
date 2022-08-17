@@ -10,7 +10,7 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 
-bindkey -v
+bindkey -e
 autoload -Uz compinit
 compinit
 
