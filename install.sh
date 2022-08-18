@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install programms
-sudo apt install \
+apt install \
     stow \
     neovim \
     tmux \
@@ -22,7 +22,7 @@ stow tmux
 stow zsh
 
 # Use zsh as a default shell
-sudo chsh -s $(which zsh) $USER
+chsh -s $(which zsh) $USER
 
 # Bundle zsh plugins 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
