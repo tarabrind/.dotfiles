@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install programms
-pacman -Sy \
+sudo pacman -Sy \
     stow \
     neovim \
     tmux \
@@ -11,7 +11,7 @@ pacman -Sy \
     fzf \
     ripgrep
 
-curl -sfL git.io/antibody | sh -s - -b /usr/local/bin
+curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
@@ -22,7 +22,7 @@ stow tmux
 stow zsh
 
 # Use zsh as a default shell
-chsh -s $(which zsh) $USER
+sudo chsh -s $(which zsh) $USER
 
 # Bundle zsh plugins 
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
