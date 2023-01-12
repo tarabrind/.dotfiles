@@ -23,10 +23,12 @@ alias vim="nvim"
 alias ls="ls --color -h"
 alias ll="ls -l"
 alias la="ls -la"
-alias ip="ip -c"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
+
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
