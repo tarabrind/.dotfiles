@@ -1,6 +1,8 @@
-[user]
-	email = tarabrind@gmail.com
-	name = TDen
+[includeIf "gitdir:~/code/personal/"]
+  	path = .gitconfig-personal
+[includeIf "gitdir:~/code/work/"]
+  	path = .gitconfig-work
+
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nvim
